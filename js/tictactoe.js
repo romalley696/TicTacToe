@@ -159,7 +159,7 @@ function drawWinLine (coordX1, coordY1, coordX2, coordY2) {
             //this checks if we reached endpoint
             if (x1 <= x2 && y1 <= y2) {
                 //this conditions adds 10 to the previous x and y point
-                if (x,x2) {x+=10;}
+                if (x<x2) {x+=10;}
                 if (y<y2) {y+=10;}
                 //this cancels animation loop
                 if (x>=x2 && y>=y2) {cancelAnimationFrame(animationLoop);}
